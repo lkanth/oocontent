@@ -45,7 +45,7 @@
   <steps>
     <step id="1b28bff7-ee2d-4e36-a9e9-2bb5073ab2bf">
       <annotation>7bab32d9-0799-4a1d-8473-a04b8cfbb710.1b28bff7-ee2d-4e36-a9e9-2bb5073ab2bf.description</annotation>
-      <name>SQL Query</name>
+      <name>SQL Query2</name>
       <bounds>
         <x>129.0</x>
         <y>195.0</y>
@@ -455,12 +455,6 @@
       </bounds>
       <layer>-1</layer>
       <hideInbound>false</hideInbound>
-      <iconSpec id="b89e300f-e363-42a6-973d-b625e281341d">
-        <baseIcon>return_success.png</baseIcon>
-        <basePath>System</basePath>
-        <readOnly>true</readOnly>
-        <layers/>
-      </iconSpec>
       <addResultToRunContext>false</addResultToRunContext>
       <isCriticalStep>false</isCriticalStep>
       <isNonBlocking>false</isNonBlocking>
