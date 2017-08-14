@@ -47,8 +47,8 @@
       <annotation>1394525d-37c2-4838-a72a-4cc5ead394f9.3feae452-44fc-44bb-a70a-4e1c70316c69.description</annotation>
       <name>PowerShell Script</name>
       <bounds>
-        <x>177.0</x>
-        <y>168.0</y>
+        <x>118.0</x>
+        <y>170.0</y>
       </bounds>
       <layer>-1</layer>
       <hideInbound>false</hideInbound>
@@ -77,7 +77,6 @@
           <isPersisted>true</isPersisted>
           <inputSymbol>host</inputSymbol>
           <listDelimiter>,</listDelimiter>
-          <value>16.78.126.214</value>
           <record>false</record>
         </staticBinding>
         <staticBinding id="35cdce1c-4dbf-4ac5-b1d9-128ef8a96ba3">
@@ -104,7 +103,7 @@
           <listDelimiter>,</listDelimiter>
           <record>false</record>
         </staticBinding>
-        <staticBinding id="8024bd26-8e7f-4f7f-88ed-86ab5c03b63c">
+        <staticBinding id="57ba19db-b3a8-4012-a0ae-c81ee690dbff">
           <annotation></annotation>
           <toContextKey></toContextKey>
           <fromContextKey></fromContextKey>
@@ -116,7 +115,6 @@
           <isPersisted>true</isPersisted>
           <inputSymbol>username</inputSymbol>
           <listDelimiter>,</listDelimiter>
-          <value>Administrator</value>
           <record>false</record>
         </staticBinding>
         <staticBinding id="7d1cb9fd-b140-431e-82a6-d7eb100b247f">
@@ -125,13 +123,12 @@
           <fromContextKey></fromContextKey>
           <assignFromContext>false</assignFromContext>
           <assignToContext>false</assignToContext>
-          <inputType>STRING</inputType>
+          <inputType>ENCRYPTED</inputType>
           <isList>false</isList>
           <required>false</required>
           <isPersisted>true</isPersisted>
           <inputSymbol>password</inputSymbol>
           <listDelimiter>,</listDelimiter>
-          <value>iso*help1</value>
           <record>false</record>
         </staticBinding>
         <staticBinding id="486134cf-d013-486e-9839-2a8f74b1bca9">
@@ -146,7 +143,7 @@
           <listDelimiter>,</listDelimiter>
           <record>false</record>
         </staticBinding>
-        <staticBinding id="a36788a1-f02e-4234-a284-4a3c35b9f24e">
+        <userInputBinding id="fe8dfeb1-6974-4dbd-ad12-1fa4029dd4dc">
           <annotation></annotation>
           <assignFromContext>false</assignFromContext>
           <assignToContext>false</assignToContext>
@@ -156,9 +153,15 @@
           <isPersisted>true</isPersisted>
           <inputSymbol>authType</inputSymbol>
           <listDelimiter>,</listDelimiter>
-          <value>Default</value>
           <record>false</record>
-        </staticBinding>
+          <prompt></prompt>
+          <isMultiSelect>false</isMultiSelect>
+          <link>
+            <refId>b85e9466-424d-46a5-966c-2e2c0237912e</refId>
+            <refName>PowerShell Authentication Types</refName>
+          </link>
+          <sourceDelimiter>|</sourceDelimiter>
+        </userInputBinding>
         <staticBinding id="0bebcd2e-2bbe-47d8-acbc-29cb03804b58">
           <annotation></annotation>
           <assignFromContext>false</assignFromContext>
@@ -181,10 +184,10 @@
           <isPersisted>true</isPersisted>
           <inputSymbol>scriptTimeout</inputSymbol>
           <listDelimiter>,</listDelimiter>
-          <value>4000</value>
+          <value>1000</value>
           <record>false</record>
         </staticBinding>
-        <staticBinding id="502d5fcb-9141-489b-8f3a-b1884c20d811">
+        <userInputBinding id="e8308474-337a-4928-a753-06a61331f204">
           <annotation></annotation>
           <assignFromContext>false</assignFromContext>
           <assignToContext>false</assignToContext>
@@ -194,9 +197,15 @@
           <isPersisted>true</isPersisted>
           <inputSymbol>useSSL</inputSymbol>
           <listDelimiter>,</listDelimiter>
-          <value>False</value>
           <record>false</record>
-        </staticBinding>
+          <prompt></prompt>
+          <isMultiSelect>false</isMultiSelect>
+          <link>
+            <refId>96a1ed25-cdc9-4ff6-8fba-e9c044c5ca53</refId>
+            <refName>Boolean - False Default</refName>
+          </link>
+          <sourceDelimiter>|</sourceDelimiter>
+        </userInputBinding>
         <staticBinding id="5229da93-a8f1-4a5b-9165-ce12ad44e9e5">
           <annotation></annotation>
           <assignFromContext>false</assignFromContext>
@@ -233,7 +242,7 @@
           <listDelimiter>,</listDelimiter>
           <record>false</record>
         </staticBinding>
-        <staticBinding id="b3170958-c33d-4fcb-96c1-1d862af6a44c">
+        <userInputBinding id="9e607bd0-6649-48da-9377-28845bc7b8c0">
           <annotation></annotation>
           <assignFromContext>false</assignFromContext>
           <assignToContext>false</assignToContext>
@@ -243,10 +252,16 @@
           <isPersisted>true</isPersisted>
           <inputSymbol>keepSessionAlive</inputSymbol>
           <listDelimiter>,</listDelimiter>
-          <value>False</value>
           <record>false</record>
-        </staticBinding>
-        <staticBinding id="e9d9f997-46dc-4ea5-afda-5de171bb7f08">
+          <prompt></prompt>
+          <isMultiSelect>false</isMultiSelect>
+          <link>
+            <refId>96a1ed25-cdc9-4ff6-8fba-e9c044c5ca53</refId>
+            <refName>Boolean - False Default</refName>
+          </link>
+          <sourceDelimiter>|</sourceDelimiter>
+        </userInputBinding>
+        <userInputBinding id="346f1a6e-ba48-4692-9bbb-f2848648b558">
           <annotation></annotation>
           <assignFromContext>false</assignFromContext>
           <assignToContext>false</assignToContext>
@@ -256,9 +271,15 @@
           <isPersisted>true</isPersisted>
           <inputSymbol>enablePiping</inputSymbol>
           <listDelimiter>,</listDelimiter>
-          <value>False</value>
           <record>false</record>
-        </staticBinding>
+          <prompt></prompt>
+          <isMultiSelect>false</isMultiSelect>
+          <link>
+            <refId>96a1ed25-cdc9-4ff6-8fba-e9c044c5ca53</refId>
+            <refName>Boolean - False Default</refName>
+          </link>
+          <sourceDelimiter>|</sourceDelimiter>
+        </userInputBinding>
         <staticBinding id="5cbdfcfe-80aa-4f9d-ac3d-d6ef75b0fd1d">
           <annotation></annotation>
           <assignFromContext>false</assignFromContext>
@@ -305,7 +326,7 @@
           <isPersisted>true</isPersisted>
           <inputSymbol>script</inputSymbol>
           <listDelimiter>,</listDelimiter>
-          <value>C:\Hello1.ps1</value>
+          <value>C:\Hello.ps1</value>
           <record>false</record>
         </staticBinding>
         <staticBinding id="dc5bb1f1-a0e8-4958-a709-29b33df590e7">
@@ -320,7 +341,7 @@
           <listDelimiter>,</listDelimiter>
           <record>false</record>
         </staticBinding>
-        <staticBinding id="80b3f311-ee20-4e19-8f24-565f8d70b2e0">
+        <userInputBinding id="1288abc9-4ad3-4528-9cef-61d212cd031b">
           <annotation></annotation>
           <assignFromContext>false</assignFromContext>
           <assignToContext>false</assignToContext>
@@ -330,9 +351,15 @@
           <isPersisted>true</isPersisted>
           <inputSymbol>returnTable</inputSymbol>
           <listDelimiter>,</listDelimiter>
-          <value>False</value>
           <record>false</record>
-        </staticBinding>
+          <prompt></prompt>
+          <isMultiSelect>false</isMultiSelect>
+          <link>
+            <refId>96a1ed25-cdc9-4ff6-8fba-e9c044c5ca53</refId>
+            <refName>Boolean - False Default</refName>
+          </link>
+          <sourceDelimiter>|</sourceDelimiter>
+        </userInputBinding>
         <staticBinding id="fe496729-2f30-4c92-b5c3-40e5185f6af7">
           <annotation></annotation>
           <toContextKey></toContextKey>
@@ -440,36 +467,7 @@
       <opRef>
         <refId>f0b2afd2-5733-47e4-80ba-7f2387cc66d5</refId>
       </opRef>
-      <assignments>
-        <flowVariableAssignment id="1da2a7b4-e9cb-4a17-a33d-406da048835c">
-          <annotation></annotation>
-          <name>assignment</name>
-          <action>OVERWRITE</action>
-          <assignmentTargetType>FLOW_VARIABLE</assignmentTargetType>
-          <contextKey>exception</contextKey>
-          <expression id="00412833-3508-4d55-b837-1c575e28f289">
-            <annotation></annotation>
-            <name>Result Field: exception</name>
-            <fieldName>exception</fieldName>
-            <sourceType>RAWRESULT</sourceType>
-            <filters/>
-          </expression>
-        </flowVariableAssignment>
-        <flowVariableAssignment id="8a0da886-f670-4a19-b03c-1dd526e2d689">
-          <annotation></annotation>
-          <name>assignment</name>
-          <action>OVERWRITE</action>
-          <assignmentTargetType>FLOW_VARIABLE</assignmentTargetType>
-          <contextKey>returnResult</contextKey>
-          <expression id="ecc355bf-c0d2-463f-8b26-928ced6842b6">
-            <annotation></annotation>
-            <name>Result Field: returnResult</name>
-            <fieldName>returnResult</fieldName>
-            <sourceType>RAWRESULT</sourceType>
-            <filters/>
-          </expression>
-        </flowVariableAssignment>
-      </assignments>
+      <assignments/>
       <throttleSize>0</throttleSize>
     </step>
     <returnStep id="17dea346-7130-4840-b049-3c6109f977ae">
